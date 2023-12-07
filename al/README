@@ -1,4 +1,4 @@
-## This tutorial describes a way to calculate the electronic bandstructure in a given material.
+
 It has the following three steps:
 
 1) Calculate the self consistent field after optimising the structure.
@@ -12,8 +12,5 @@ pw.x <  al.band1.in > al.band1.out
 3) Convert the data into a x-y format using the following:
 bands.x <  al.band2.in > al.band2.out
 
-Submission:
 
-1) Prepare a report containing electronic band structure.
-Compare your electronic bandstructure with the literature results.
 
