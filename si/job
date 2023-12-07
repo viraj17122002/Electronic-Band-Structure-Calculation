@@ -1,0 +1,4 @@
+mpirun -n 4 /home/cme05/codes/qe-6.4.1/bin/pw.x   <  si.scf.in > si.scf.out
+mpirun -n 4 /home/cme05/codes/qe-6.4.1/bin/pw.x   <  si.band1.in > si.band1.out
+mpirun -n 4 /home/cme05/codes/qe-6.4.1/bin/bands.x <  si.band2.in > si.band2.out
+

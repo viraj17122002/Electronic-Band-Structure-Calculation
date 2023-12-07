@@ -1,0 +1,11 @@
+#!/bin/sh
+
+PARA_PREFIX="mpirun -n 8"
+PARA_POSTFIX=""
+#PARA_POSTFIX="-nk 4 -nd 1 -nb 1 -nt 1"
+BIN_DIR=""
+
+$PARA_PREFIX  pw.x  <  al.scf.in  > al.scf.out
+$PARA_PREFIX  pw.x  <  al.band1.in > al.band1.out
+$PARA_PREFIX  bands.x <  al.band2.in > al.band2.out
+

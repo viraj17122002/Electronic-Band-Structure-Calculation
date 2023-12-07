@@ -1,0 +1,6 @@
+ &bands
+    prefix='si',
+    outdir='/Users/virgrammid/Desktop/Lab/si/tmp'
+    filband = 'bands.dat'
+    lsym=.true.
+/

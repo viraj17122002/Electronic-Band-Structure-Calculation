@@ -1,0 +1,6 @@
+### Commands to get the location of k-path endpoints ###
+sed -n '1p; 51p; 101p; 151p; 201p' < bands.dat.gnu > data
+awk '{print $1}' data > label
+cat label
+
+

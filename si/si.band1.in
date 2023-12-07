@@ -1,0 +1,32 @@
+ &control
+    calculation='bands'
+    prefix='si',
+    pseudo_dir = '/Users/virgrammid/Desktop/Lab/si/pseudo'
+    outdir='/Users/virgrammid/Desktop/Lab/si/tmp'
+ /
+
+ &system    
+    ibrav=  2, celldm(1) =10.327 , nat=  2, ntyp= 1,
+    ecutwfc =30.0, nbnd=8
+ 
+/
+ &electrons
+ /
+
+ATOMIC_SPECIES
+ Si  28.086  Si.rel-pbe-rrkj.UPF
+
+ATOMIC_POSITIONS
+ Si 0.00 0.00 0.00
+ Si 0.25 0.25 0.25
+
+K_POINTS crystal_b
+#  tpiba = k-points in units of 2pi/a
+#  number of k-points
+ 5
+#  kx, ky, kz, wk  (wk=symmetry weight is ignored in bands calculations)
+   0.5 0.5 0.5  50
+   0.0 0.0 0.0  50
+   0.5 0.0 0.5  50
+   0.5 0.25 0.75  50
+   0.0 0.0 0.0  50
